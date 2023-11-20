@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?>
+
+
+<VBox fx:controller="controller.MMSController"  xmlns:fx="http://javafx.com/fxml/1" alignment="center" prefHeight="580.0" prefWidth="1300.0" styleClass="background" spacing="10" >
+    <TableView  styleClass="table-view" fx:id="Tablereport">
+        <columns >
+            <TableColumn fx:id="TableCol" prefWidth="162.5"  text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162.5" text="Type">
+                <cellValueFactory>
+                    <PropertyValueFactory property="type"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162.5" text="Expense">
+                <cellValueFactory>
+                    <PropertyValueFactory property="expense"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162.5" text="Credits">
+                <cellValueFactory>
+                    <PropertyValueFactory property="totalCredits"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162" text="GasdeductionRate">
+                <cellValueFactory>
+                    <PropertyValueFactory property="GasdeductionRate"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162" text="DeductionRate">
+                <cellValueFactory>
+                    <PropertyValueFactory property="deductionRate"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162" text="PayPerCredit">
+                <cellValueFactory>
+                    <PropertyValueFactory property="payPerCredit"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="162" text="DollarAvailable">
+                <cellValueFactory>
+                    <PropertyValueFactory property="DollarAvailable"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Separator/>
+    <GridPane hgap="10"   alignment="CENTER" >
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Total Expense:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="0" GridPane.columnIndex="1" text="" fx:id="TotExpTxt"/>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="2" text="Total Credits:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="0" GridPane.columnIndex="3" text="" fx:id="TotCredits"/>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="AvgGasdeductionRate:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="1" GridPane.columnIndex="1" text="" fx:id="AvgGasDeducTxt"/>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="2" text="AvgDeductionRate:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="1" GridPane.columnIndex="3" text="" fx:id="AvgDeducTxt"/>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="AvgPayPerCredit:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="2" GridPane.columnIndex="1" text="" fx:id="AvgPPCreditTxt"/>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="2" text="TotalDollarAvailable:"/>
+        <Text styleClass="text-out" GridPane.rowIndex="2" GridPane.columnIndex="3" text="" fx:id="TotDollarAvailableTxt"/>
+    </GridPane>
+    <Separator/>
+    <Button styleClass="button" alignment="CENTER"  text="Close" onAction="#handleclose" fx:id="CloseBtn" />
+    <stylesheets>
+        <URL value="@mmsfx.css"/>
+    </stylesheets>
+
+</VBox>

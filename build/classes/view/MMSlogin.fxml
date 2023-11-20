@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<VBox  prefHeight="300.0" prefWidth="400.0" fx:controller="controller.MMSLoginController"  xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" styleClass="background">
+<GridPane alignment="CENTER"   hgap="5" vgap="10"  >	
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="label-header" text="Login" />
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Email:"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"  text="" fx:id="emailTf"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Password:"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" text="" fx:id="passwordTf"/>
+</GridPane>  
+    <Label alignment="CENTER" styleClass="label-error" text="" fx:id="wrongloginTxt"/>
+<GridPane hgap="5" vgap="10" alignment="CENTER"  >
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
+        <Button styleClass="button" text="OK" fx:id="okBtn" onAction="#handleok"/>
+        <Button styleClass="button" text="Cancel" fx:id="cancelBtn" onAction="#handlecancel"/>
+    </HBox>
+</GridPane>
+<stylesheets>
+    <URL value="@mmsfx.css"/>
+</stylesheets>
+</VBox>
+    
+
+

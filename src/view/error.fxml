@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      alignment="center" fx:controller="controller.ErrorController"
+      styleClass="background"   prefHeight="300.0" prefWidth="350.0">
+    <Label text="Form Validation Errors"/>
+    <GridPane alignment="CENTER"  vgap="0" hgap="0" >
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="0" text="" fx:id="Lb1"/>
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="1" text="" fx:id="Lb2"/>
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="2" text="" fx:id="Lb3"/>
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="3" text="" fx:id="Lb4"/>
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="4" text="" fx:id="Lb5"/>
+        <Label styleClass="Text-type" textAlignment="LEFT"  GridPane.rowIndex="5" text="" />
+    </GridPane>
+    <Button styleClass="button" text="Okay" fx:id="OkayBtn" onAction="#handleokay"/>
+    <stylesheets>
+        <URL value="@mmsfx.css"/>
+    </stylesheets>
+
+</VBox>
+

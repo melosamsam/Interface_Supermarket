@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox fx:controller="controller.SuperMarketController"  xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10" styleClass="background" prefHeight="500.0" prefWidth="700.0">
+    <Label styleClass="label-header" text="Filters" alignment="BASELINE_LEFT"  />
+    <GridPane hgap="10" alignment="CENTER">
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Name:"/>
+        <TextField promptText="Filter by name"  GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="FilternameTf" />
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="2" text="Email:"/>
+        <TextField promptText="Filter by email"  GridPane.rowIndex="0" GridPane.columnIndex="3" fx:id="FilteremailTf" />
+    </GridPane>
+    <Separator/>
+    <TableView styleClass="table-view"   fx:id="membershipTv"  prefWidth="600"   prefHeight="300"  >
+        <placeholder><Label text="Memberships list is not loaded"/></placeholder>
+        <columns >
+            <TableColumn prefWidth="200"  text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200" text="Email">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200" text="Phone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phone"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Separator/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button styleClass="button" text="Add" onAction="#handleadd" />
+        <Button styleClass="button" disable="true" fx:id="DeleteBtn" onAction="#handledelete"  text="Delete"/>
+        <Button styleClass="button" disable="true" fx:id="SelectBtn" onAction="#handleselect"  text="Select"/>
+        <Button styleClass="button" disable="true" fx:id="SLIPBtn"  onAction="#handleslip" text="SLIP"/>
+        <Button styleClass="button" text="Report" onAction="#handlereport"/>
+        <Button styleClass="button" text="Close" fx:id="CloseBtn" onAction="#handleclose"/>
+    </HBox>
+    <stylesheets>
+        <URL value="@mmsfx.css"/>
+    </stylesheets>
+</VBox>

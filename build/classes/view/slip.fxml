@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox fx:controller="controller.MMSlipController" prefHeight="338.0" prefWidth="550.0" styleClass="background" alignment="CENTER"  
+          xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane hgap="30" >
+        <Label styleClass="label-header" GridPane.rowIndex="0" GridPane.columnIndex="0" text="Membership Slip:"/>
+        <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <Label  GridPane.rowIndex="0" GridPane.columnIndex="0" text="Total Credits:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="0" GridPane.columnIndex="1" text="" fx:id="TotalCreditsTxt"/>
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Total Expense:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="1" GridPane.columnIndex="1" text="" fx:id="TotalExpenseTxt"/>
+            <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="GasDeduction Rate:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="2" GridPane.columnIndex="1" text="" fx:id="GasDeductionTxt"/>
+        </GridPane>
+        <GridPane GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Pay Per Credit:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="0" GridPane.columnIndex="1" text="" fx:id="PPCreditsTxt"/>
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Dollar Available:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="1" GridPane.columnIndex="1" text="" fx:id="DollarAvailableTxt"/>
+            <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Deduction Rate:"/>
+            <Text styleClass="text-out" GridPane.rowIndex="2" GridPane.columnIndex="1" text="" fx:id="DeductionTxt"/>
+        </GridPane>
+        <padding>
+        <Insets top="10" bottom="10" left="10" right="10" />
+        </padding>
+        
+    </GridPane>
+    <Button styleClass="button" text="Close" fx:id="CloseBtn" onAction="#handleclose" />
+    <stylesheets>
+        <URL value="@mmsfx.css"/>
+    </stylesheets>
+</VBox>
+    
