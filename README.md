@@ -7,17 +7,15 @@ The user can use credentials to log in, if his credentials are wrong, the app di
 
 ![image](https://github.com/user-attachments/assets/e172f66d-0af0-4c3f-ac0f-10d3b14c12d0)
 
-
-
 Otherwise, a new window opens :
 
+![image](https://github.com/user-attachments/assets/ddb4e5e8-125d-403c-8598-628906c06528)
 
 Once connected, the admin user can edit a client's information. It can also add clients to the database and use the search bar to find them by name.
 
 ![image](https://github.com/user-attachments/assets/29d6194f-ea9a-4711-b5ce-0a037868ab57)
 
 
-![image](https://github.com/user-attachments/assets/f21d216c-826a-4451-817e-f8d58f798abf)
 
 
 ![image](https://github.com/melosamsam/Interface_Supermarket/assets/103419843/76e14956-0ae5-4c20-b723-6986b9fffb22)
