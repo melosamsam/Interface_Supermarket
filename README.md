@@ -60,9 +60,7 @@ Once selected, a client’s full information is shown and can be updated:
 
 ![image](https://github.com/user-attachments/assets/b79dfc8f-e3b9-40b8-a859-e7111629eb09)
 
----
-
-### 5. Membership Slip ("SLIP")
+### Membership Slip ("SLIP")
 
 Displays details about the selected client’s membership.
 
@@ -70,7 +68,7 @@ Displays details about the selected client’s membership.
 
 ---
 
-### 6. Membership Report
+### 5. Membership Report
 
 Generates a report showing membership data for all clients.
 
@@ -78,7 +76,7 @@ Generates a report showing membership data for all clients.
 
 ---
 
-### 7. Add New Client
+### 6. Add New Client
 
 Admins can add new clients using a form similar to the update window.
 
