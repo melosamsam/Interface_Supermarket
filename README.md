@@ -80,6 +80,7 @@ Generates a report showing membership data for all clients.
 
 Admins can add new clients using a form similar to the update window.
 
-![image](https://github.com/user-attachments/assets/0a034312-e034-442a-b84e-4855385aa565)
+![image](https://github.com/user-attachments/assets/14b050b9-ff37-4836-8d88-ae6ba8a53246)
+
 
 
